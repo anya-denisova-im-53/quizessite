@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizlet</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#information">Information</a></li>
+                    <li><a href="#Takequiz">Take quiz</a></li>
+                    <li><a href="#createnewtask">Create new task </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div class="information" id="information">
+            <h1>
+                Information about Quizlet.
+            </h1>
+            <p>This website was developed for its own quizzes </p>
+        </div>
+    <div class="createnewtask" id="createnewtask">
+        <h1>Create new task</h1>
+        <p> Welcome! This site allows you to create your own quizzes and take quizzes created by yourself.</p>
+        <button onclick="goToPage('create.html')">Create Quiz</button>
+    </div>
+    <div class="takequiz" id="Takequiz">
+        <h1>Take quiz</h1>
+        <p> Here you can take some quizzes.</p>
+        <button onclick="goToPage('create.html')">Take quiz</button>
+    </div>
+   <footer>
+     <footer id="contact">
+        <p>© 2025 Quizlet - Всі права захищені.</p>
+        <p>Our number +380 98 6789 4582</p>
+    </footer>
+    <script src="main.js"></script>
+   </footer>
+</body>
