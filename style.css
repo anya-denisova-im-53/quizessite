@@ -1,0 +1,99 @@
+/* === BODY === */
+body {
+  font-family: Arial, sans-serif;
+  background: #ece7f0; /* світло-сірий фон */
+  margin: 0;
+  padding: 0;
+}
+
+/* === MAIN CONTAINER === */
+main {
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 30px;
+  margin: 40px auto; /* по центру */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* === HEADER === */
+header {
+  background: #6200ee;
+  color: white;
+  padding: 20px;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+}
+
+/* === HEADINGS === */
+h1, h2 {
+  margin: 15px 0;
+}
+
+/* === INPUTS AND TEXTAREAS === */
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === BUTTONS === */
+button {
+  background: #6200ee;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px 5px 0 5px;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #4500c4;
+}
+
+/* === QUESTION BLOCK === */
+.question-block {
+  background: #f5f0fa;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* === ANSWER BLOCK === */
+.answer-block {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.answer-block input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* === DELETE BUTTON === */
+.delete-btn {
+  background: #e53935;
+}
+
+.delete-btn:hover {
+  background: #ab000d;
+}
+
+/* === TAKE QUIZ BUTTON === */
+button.take-btn {
+  display: block;
+  margin: 15px auto 0 auto;
+}
