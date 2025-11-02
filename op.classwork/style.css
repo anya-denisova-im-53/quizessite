@@ -1,0 +1,82 @@
+body {
+   margin: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #f7f9fb;
+   color: #333;
+   }
+header{
+   background-color: plum;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   padding: 10px;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1000
+}
+.information h1{
+   text-align: center;
+   margin-top: 180px;
+}
+.information p{
+   text-align: left;
+   font-size: 20px;
+   margin-left: 20px;
+}
+.createnewtask h1{
+   text-align: center;
+   margin-top: 50px;
+}
+.createnewtask p{
+   text-align: left;
+   font-size: 20px;
+   margin-left: 20px;
+}
+.createnewtask button{
+   margin-left: 720px;
+   padding: 10px 20px;
+   background-color: plum;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   border: 2px solid black;
+   
+}
+.createnewtask button:hover{
+   background-color: purple;
+}
+.takequiz h1{
+   text-align: center;
+   margin-top: 50px;
+}
+.takequiz p{
+   text-align: left;
+   font-size: 20px;
+   margin-left: 20px;
+}
+.takequiz button{
+   margin-left: 720px;
+   padding: 10px 20px;
+   background-color: plum;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   border: 2px solid black;
+}
+.takequiz button:hover{
+   background-color: purple;
+}
+footer{
+   background-color: plum;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   z-index: 1000;
+}
