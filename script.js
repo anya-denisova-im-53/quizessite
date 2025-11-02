@@ -1,10 +1,10 @@
 const app = document.getElementById("app");
 
-// ====== STORAGE ======
+
 const getQuizzes = () => JSON.parse(localStorage.getItem("quizzes") || "[]");
 const saveQuizzes = (quizzes) => localStorage.setItem("quizzes", JSON.stringify(quizzes));
 
-// ====== PAGES ======
+
 function showHome() {
   const quizzes = getQuizzes();
   app.innerHTML = `
@@ -65,7 +65,7 @@ function addQuestion() {
 function deleteQuestion(index) {
   const questionsDiv = document.getElementById("questions");
   questionsDiv.removeChild(questionsDiv.children[index]);
-  // Оновлюємо ID всіх наступних питань після видалення
+
   Array.from(questionsDiv.children).forEach((div, i) => {
     div.querySelector(`input[id^='q-']`).id = `q-${i}`;
     div.querySelectorAll(`input[id^='a-']`).forEach((a, j) => a.id = `a-${i}-${j}`);
@@ -132,5 +132,5 @@ function startQuiz(index) {
   }
 }
 
-// ====== START ======
+
 showHome();

@@ -1,24 +1,23 @@
-/* === BODY === */
+
 body {
   font-family: Arial, sans-serif;
-  background: #ece7f0; /* світло-сірий фон */
-  margin: 0;
+  background: #ece7f0; 
   padding: 0;
 }
 
-/* === MAIN CONTAINER === */
+
 main {
   width: 90%;
   max-width: 600px;
   background: #ffffff;
   padding: 30px;
-  margin: 40px auto; /* по центру */
+  margin: 40px auto; 
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
 }
 
-/* === HEADER === */
+
 header {
   background: #6200ee;
   color: white;
@@ -27,12 +26,12 @@ header {
   text-align: center;
 }
 
-/* === HEADINGS === */
+
 h1, h2 {
   margin: 15px 0;
 }
 
-/* === INPUTS AND TEXTAREAS === */
+
 input, textarea {
   width: 90%;
   padding: 10px;
@@ -45,7 +44,7 @@ input, textarea {
   margin-right: auto;
 }
 
-/* === BUTTONS === */
+
 button {
   background: #6200ee;
   color: white;
@@ -61,7 +60,7 @@ button:hover {
   background: #4500c4;
 }
 
-/* === QUESTION BLOCK === */
+
 .question-block {
   background: #f5f0fa;
   border: 1px solid #ddd;
@@ -71,7 +70,7 @@ button:hover {
   text-align: left;
 }
 
-/* === ANSWER BLOCK === */
+
 .answer-block {
   display: flex;
   align-items: center;
@@ -83,7 +82,7 @@ button:hover {
   margin-right: 10px;
 }
 
-/* === DELETE BUTTON === */
+
 .delete-btn {
   background: #e53935;
 }
@@ -92,7 +91,7 @@ button:hover {
   background: #ab000d;
 }
 
-/* === TAKE QUIZ BUTTON === */
+
 button.take-btn {
   display: block;
   margin: 15px auto 0 auto;
