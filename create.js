@@ -3,7 +3,7 @@ let allQuestions = [];
 
 const optionsBox = document.getElementById("options-box");
 
-// Add a new option
+
 document.getElementById("add-option-btn").onclick = () => {
   const option = { text: "", isCorrect: false };
   currentOptions.push(option);
@@ -15,6 +15,7 @@ document.getElementById("add-option-btn").onclick = () => {
   input.type = "text";
   input.placeholder = "Option text";
   input.oninput = () => option.text = input.value;
+
 
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
@@ -40,7 +41,7 @@ document.getElementById("add-option-btn").onclick = () => {
   optionsBox.appendChild(row);
 };
 
-// Save question
+
 document.getElementById("save-question-btn").onclick = () => {
   const questionText = document.getElementById("q-text").value.trim();
   if (!questionText) {
@@ -94,3 +95,6 @@ document.getElementById("save-quiz-btn").onclick = () => {
   localStorage.setItem("userQuizzes", JSON.stringify(saved));
   alert("Quiz saved!");
 };
+
+
+
