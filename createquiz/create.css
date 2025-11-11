@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f2;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #cc007a;
+}
+
+.box {
+  background: white;
+  border: 2px solid #ff99cc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 12px rgba(255, 105, 180, 0.3);
+}
+
+select, button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ff66b3;
+  background: #ffb3d9;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #ff66b3;
+}
+
+.answer-row {
+  margin: 10px 0;
+  padding: 8px;
+  background: #ffe6f7;
+  border-radius: 8px;
+}
+
+label {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #99004d;
+}
+
+
