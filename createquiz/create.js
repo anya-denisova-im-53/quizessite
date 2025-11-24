@@ -95,7 +95,3 @@ document.getElementById("save-quiz-btn").onclick = () => {
   localStorage.setItem("userQuizzes", JSON.stringify(saved));
   alert("Quiz saved!");
 };
-
-
-
-

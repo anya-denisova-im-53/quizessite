@@ -1,10 +1,11 @@
+
 body {
   font-family: Arial, sans-serif;
   background-color: #ffe6f2;
   padding: 20px;
 }
 
-h1 {
+h1, h2, h3 {
   text-align: center;
   color: #cc007a;
 }
@@ -15,28 +16,46 @@ h1 {
   border-radius: 12px;
   padding: 20px;
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 700px;
   box-shadow: 0 0 12px rgba(255, 105, 180, 0.3);
 }
 
-select, button {
+input, textarea, select, button {
   padding: 10px 16px;
   border-radius: 8px;
   border: 1px solid #ff66b3;
   background: #ffb3d9;
   cursor: pointer;
   margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 button:hover {
   background: #ff66b3;
 }
 
-.answer-row {
-  margin: 10px 0;
-  padding: 8px;
+textarea {
+  resize: vertical;
+  min-height: 80px;
   background: #ffe6f7;
-  border-radius: 8px;
+}
+
+select {
+  background: #ffe6f7;
+}
+
+
+
+.answer-row,
+.option-row,
+.q-item,
+.quiz-box {
+  margin: 10px 0;
+  padding: 12px;
+  background: #ffe6f7;
+  border-radius: 10px;
+  border: 1px solid #ffb3d9;
 }
 
 label {
@@ -45,4 +64,17 @@ label {
   color: #99004d;
 }
 
+.del-btn {
+  background: #ff80bf;
+  border-color: #ff4da6;
+}
 
+.del-btn:hover {
+  background: #ff4da6;
+}
+
+
+.small-btn {
+  width: auto;
+  padding: 6px 10px;
+}

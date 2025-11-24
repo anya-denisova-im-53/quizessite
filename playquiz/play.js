@@ -103,5 +103,3 @@ document.getElementById("back-btn").onclick = () => {
 document.getElementById("home-btn").onclick = () => {
   window.location.href = "index.html";
 };
-
-
