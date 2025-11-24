@@ -3,7 +3,7 @@ let currentQuiz = null;
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Elements
+
 const quizSelect = document.getElementById("quiz-select");
 const quizBox = document.getElementById("quiz-box");
 const resultBox = document.getElementById("result-box");
@@ -11,7 +11,7 @@ const questionText = document.getElementById("question-text");
 const answersBox = document.getElementById("answers-box");
 const resultText = document.getElementById("result-text");
 
-// Load quizzes into select
+
 quizzes.forEach((quiz, index) => {
   const option = document.createElement("option");
   option.value = index;
@@ -19,7 +19,7 @@ quizzes.forEach((quiz, index) => {
   quizSelect.appendChild(option);
 });
 
-// Start quiz
+
 document.getElementById("start-quiz-btn").onclick = () => {
   if (quizSelect.value === "") {
     alert("Please select a quiz");
@@ -35,7 +35,7 @@ document.getElementById("start-quiz-btn").onclick = () => {
   showQuestion();
 };
 
-// Show a question dynamically
+
 function showQuestion() {
   const q = currentQuiz.questions[currentQuestionIndex];
   questionText.textContent = q.text;
@@ -60,7 +60,7 @@ function showQuestion() {
   });
 }
 
-// Next question
+
 document.getElementById("next-btn").onclick = () => {
   const q = currentQuiz.questions[currentQuestionIndex];
   let correct = true;
@@ -82,7 +82,7 @@ document.getElementById("next-btn").onclick = () => {
   }
 };
 
-// Show result
+
 function showResult() {
   quizBox.style.display = "none";
   resultBox.style.display = "block";
@@ -91,7 +91,7 @@ function showResult() {
     `You scored ${score} out of ${currentQuiz.questions.length}`;
 }
 
-// Navigation buttons
+
 document.getElementById("exit-btn").onclick = () => {
   window.location.href = "index.html";
 };
