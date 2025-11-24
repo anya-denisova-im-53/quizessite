@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Take Quiz</title>
+  <link rel="stylesheet" href="play.css">
+</head>
+<body>
+
+<h1>Take a Quiz</h1>
+
+<div class="box" id="select-quiz-box">
+  <h3>Select a Quiz</h3>
+  <select id="quiz-select">
+    <option value="">-- Choose a quiz --</option>
+  </select>
+  <button id="start-quiz-btn">Start Quiz</button>
+  <button id="home-btn">Back to Home</button>
+</div>
+
+<div class="box" id="quiz-box" style="display:none;">
+  <h3 id="question-text"></h3>
+
+  <div id="answers-box"></div>
+
+  <button id="next-btn">Next</button>
+  <button id="exit-btn">Back to Home</button>
+</div>
+
+<div class="box" id="result-box" style="display:none;">
+  <h3>Your Result:</h3>
+  <p id="result-text"></p>
+  <button id="back-btn">Back to Home</button>
+</div>
+
+<script src="play.js"></script>
+
+</body>
+</html>

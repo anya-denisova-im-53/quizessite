@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Create Quiz</title>
+  <link rel="stylesheet" href="create.css">
+</head>
+<body>
+
+<h1>Create Your Quiz</h1>
+
+<div class="box">
+  <h3>Quiz Info</h3>
+  <input id="quiz-name" placeholder="Quiz Name">
+  <textarea id="quiz-desc" placeholder="Quiz Description"></textarea>
+</div>
+
+<div class="box">
+  <h3>Add Question</h3>
+  <input id="q-text" placeholder="Question Text">
+
+  <div id="options-box">
+  
+  </div>
+
+  <button id="add-option-btn">Add Option</button>
+  <button id="save-question-btn">Save Question</button>
+</div>
+
+<h3>Questions:</h3>
+<div id="questions-list"></div>
+
+<button id="save-quiz-btn">Save Quiz</button>
+<a href="index.html"><button>Back to Main</button></a>
+<script src="create.js"></script>
+</body>
+</html>

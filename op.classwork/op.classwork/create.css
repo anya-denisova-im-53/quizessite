@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffe6f0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #b30059;
+  margin-bottom: 20px;
+}
+
+.box {
+  background-color: #fff0f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(179, 0, 89, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ffb3d9;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+
+button {
+  background-color: #ff66a3;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e60073;
+}
+
+.option-row {
+  background-color: #ffd6eb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.option-row input[type="text"] {
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.option-row input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #ff66a3;
+  margin-right: 6px;
+}
+
+.option-row button.del-btn {
+  width: 80px;
+  margin-top: 6px;
+  background-color: #ff3385;
+}
+
+.option-row button.del-btn:hover {
+  background-color: #e60073;
+}
+
+#questions-list div {
+  background-color: #ffd6eb;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#save-quiz-btn {
+  display: block;
+  margin: 20px auto 0 auto;
+  font-weight: bold;
+}
+
+
