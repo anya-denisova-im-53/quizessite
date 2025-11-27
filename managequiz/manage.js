@@ -4,9 +4,7 @@ let quizzes = Storage.load("userQuizzes");
 const listBox = document.getElementById("manage-list");
 const editBox = document.getElementById("edit-box");
 
-// =====================================
-// LOAD LIST
-// =====================================
+
 
 function loadManageList() {
     listBox.innerHTML = "";
@@ -46,9 +44,7 @@ function loadManageList() {
     });
 }
 
-// =====================================
-// DELETE
-// =====================================
+
 
 function deleteQuiz(i) {
     if (!confirm("Delete this quiz?")) return;
@@ -58,9 +54,7 @@ function deleteQuiz(i) {
     loadManageList();
 }
 
-// =====================================
-// OPEN EDITOR
-// =====================================
+
 
 function openEditor(i) {
     const quiz = quizzes[i];
@@ -69,20 +63,18 @@ function openEditor(i) {
     editBox.style.display = "block";
     editBox.innerHTML = "";
 
-    // Quiz title
+   
     const titleInput = document.createElement("input");
     titleInput.value = quiz.name;
 
-    // Quiz desc
+   
     const descInput = document.createElement("textarea");
     descInput.value = quiz.description;
 
     editBox.appendChild(titleInput);
     editBox.appendChild(descInput);
 
-    // ----------------------------------
-    // QUESTIONS LIST
-    // ----------------------------------
+  
 
     const qList = document.createElement("div");
     editBox.appendChild(qList);
@@ -94,14 +86,14 @@ function openEditor(i) {
             const qBox = document.createElement("div");
             qBox.className = "question-item";
 
-            // question text
+            
             const qInput = document.createElement("input");
             qInput.value = q.text;
             qInput.oninput = () => q.text = qInput.value;
 
             qBox.appendChild(qInput);
 
-            // options container
+           
             const optsBox = document.createElement("div");
             optsBox.className = "options-box";
 
@@ -131,7 +123,7 @@ function openEditor(i) {
 
                 optsBox.appendChild(optRow);
             });
-            // add option button
+            
             const addOpt = document.createElement("button");
             addOpt.textContent = "Add Option";
             addOpt.onclick = () => {
@@ -139,7 +131,7 @@ function openEditor(i) {
                 renderQuestions();
             };
 
-            // delete question
+           
             const delQ = document.createElement("button");
             delQ.textContent = "Delete Question";
             delQ.onclick = () => {
@@ -157,7 +149,7 @@ function openEditor(i) {
 
     renderQuestions();
 
-    // Add new question
+    
     const addQuestionBtn = document.createElement("button");
     addQuestionBtn.textContent = "Add Question";
     addQuestionBtn.onclick = () => {
@@ -169,9 +161,7 @@ function openEditor(i) {
     };
     editBox.appendChild(addQuestionBtn);
 
-    // ----------------------------------
-    // SAVE CHANGES
-    // ----------------------------------
+   
 
     const saveBtn = document.createElement("button");
     saveBtn.textContent = "Save";
@@ -188,12 +178,12 @@ function openEditor(i) {
 
     editBox.appendChild(saveBtn);
 
-    // Cancel btn
+    
     const cancelBtn = document.createElement("button");
     cancelBtn.textContent = "Cancel";
     cancelBtn.onclick = loadManageList;
     editBox.appendChild(cancelBtn);
 }
 
-// initial load
+
 loadManageList();
