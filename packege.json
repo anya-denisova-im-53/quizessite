@@ -1,0 +1,11 @@
+{
+  "name": "quizlet-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel Index.html",
+    "build": "parcel build Index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  }
+}

@@ -1,0 +1,117 @@
+body {
+   margin: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #ffe6f0;
+   color: #333;
+   }
+header{
+   background-color: #ffb3d9;
+   box-shadow: 0 2px 5px rgba(180,0,90,0.2);
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #333;
+   padding: 10px;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1000
+}
+.information h1{
+   text-align: center;
+   margin-top: 180px;
+}
+.information p{
+   text-align: left;
+   font-size: 20px;
+   margin-left: 20px;
+}
+.createnewtask h1{
+   text-align: center;
+   margin-top: 50px;
+}
+.createnewtask p{
+   text-align: left;
+   font-size: 20px;
+   margin-left: 20px;
+}
+.createnewtask button{
+   margin-top: 30px;
+   margin-left: 720px;
+   padding: 10px 20px;
+   background-color: #ff66a3;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   border: 2px solid #b30059;
+   
+}
+.createnewtask button:hover{
+   background-color: #b30059;
+}
+.takequiz h1{
+   text-align: center;
+   margin-top: 50px;
+}
+.takequiz p{
+   text-align: left;
+   font-size: 20px;
+   margin-left: 20px;
+}
+.takequiz button{
+   margin-left: 720px;
+   margin-bottom: 80px;
+   padding: 10px 20px;
+   background-color: #ff66a3;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   border: 2px solid #b30059;
+}
+.takequiz button:hover{
+   background-color: #b30059;
+}
+.viewresults button,
+.manage button {
+    margin-left: 720px;
+    margin-bottom: 120px;
+    padding: 10px 20px;
+    background-color: #ff66a3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #b30059;
+}
+
+.viewresults button:hover,
+.manage button:hover {
+    background-color: #b30059;
+}
+
+.viewresults h1,
+.manage h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.viewresults p,
+.manage p {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+footer{
+   background-color: #ffb3d9;
+   box-shadow: 0 2px 5px rgba(180,0,90,0.2);
+   color: #333;
+   text-align: center;
+   padding: 10px;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   z-index: 1000;
+}

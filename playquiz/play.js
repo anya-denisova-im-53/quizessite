@@ -92,11 +92,8 @@ function showResult() {
         score: `${score}/${currentQuiz.questions.length}`,
         date: new Date().toISOString().split("T")[0]
     });
-    Storage.save("quizResults", results);
-}
-
-
-document.getElementById("back-btn").onclick = () => {
-    location.href = "Index.html";
+    Storage.save("quizResults", results); 
 };
+
+
 
